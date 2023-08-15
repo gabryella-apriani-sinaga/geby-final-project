@@ -10,7 +10,7 @@ const ThumbnailDetail = () => {
   const {id} = useParams();
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/video-thumbnails').then((res) => {
+    axios.get('https://zealous-yak-leg-warmers.cyclic.cloud/api/video-thumbnails').then((res) => {
       const thumb = res.data.data.videoThumbnailList.find(el => el._id === id)
       setThumbList(thumb)
     })
