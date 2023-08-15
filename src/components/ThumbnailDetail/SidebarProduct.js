@@ -8,7 +8,7 @@ const SidebarProduct = () => {
   const [product, setProduct] = useState([]);
   const {id} = useParams();
   useEffect(() => {
-    axios.get(`https://zealous-yak-leg-warmers.cyclic.cloud/api/products/${id}`).then(res => {
+    axios.get(`https://giant-cow-sundress.cyclic.cloud/api/products/${id}`).then(res => {
     setProduct(res.data.data.products);
     }) 
   }, []);

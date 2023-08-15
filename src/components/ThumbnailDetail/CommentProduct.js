@@ -11,12 +11,12 @@ const CommentProduct = () => {
   const [username, setUsername] = useState("");
   const [comments, setComments] = useState("");
   useEffect (() => {
-    axios.get(`https://zealous-yak-leg-warmers.cyclic.cloud/api/comments/${id}`).then(res => setComment(res.data.data.comments))
+    axios.get(`https://giant-cow-sundress.cyclic.cloud/api/comments/${id}`).then(res => setComment(res.data.data.comments))
   }, []);
 
   const handleClick = (e) => {
     e.preventDefault();
-    axios.post(`https://zealous-yak-leg-warmers.cyclic.cloud/api/comments/${id}`,{
+    axios.post(`https://giant-cow-sundress.cyclic.cloud/api/comments/${id}`,{
       username, comment:comments
     }).then(res => setComment([...comment, res.data.data.comment]))
     setUsername('');

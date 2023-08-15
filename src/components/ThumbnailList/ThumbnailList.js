@@ -10,7 +10,7 @@ const ThumbnailList = () => {
   
 
   useEffect(() => {
-    axios.get('https://zealous-yak-leg-warmers.cyclic.cloud/api/video-thumbnails').then((res) => {
+    axios.get('https://giant-cow-sundress.cyclic.cloud/api/video-thumbnails').then((res) => {
       setThumbList(res.data.data.videoThumbnailList)
     })
     
